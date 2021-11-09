@@ -13,22 +13,22 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-    <img src="images\childheath.jpg" class="d-block w-100" alt="Child Health"  height="550">
-      <div style="background-color:DodgerBlue;" class="carousel-caption d-none d-md-block">
+    <img src="images\childheath.jpg" class="d-block w-100 h-100" alt="Child Health"  height="550">
+      <div style="background-color:DodgerBlue; opacity:0.85; border-radius: 25px;" class="carousel-caption d-none d-md-block">
         <h2>Child Care</h2>
         <p>Child care at Crown Medical promotes the health of children and adolescents with a balanced program that provides patient education and delivers high quality comprehensive clinical care and service.</p>
       </div>
     </div>
     <div class="carousel-item">
-    <img src="images\healthcoaching.jpg" class="d-block w-100" alt="Health Coaching" height="550">
-      <div style="background-color:DodgerBlue;" class="carousel-caption d-none d-md-block">
+    <img src="images\healthcoaching.jpg" class="d-block w-100 h-100" alt="Health Coaching" height="550">
+      <div style="background-color:DodgerBlue; opacity:0.85; border-radius: 25px;" class="carousel-caption d-none d-md-block">
         <h2>Health Coaching</h2>
         <p>Our Health Coaches are behaviour change specialists who know how to partner with patients to identify health goals that put them on the road to confident self-management of their chronic condition(s).</p>
       </div>
     </div>
     <div class="carousel-item">
-    <img src="images\seniorhealth.jpg" class="d-block w-100" alt="Senior Health" height="550">
-      <div style="background-color:DodgerBlue;" class="carousel-caption d-none d-md-block">
+    <img src="images\seniorhealth.jpg" class="d-block w-100 h-100" alt="Senior Health" height="550">
+      <div style="background-color:DodgerBlue;opacity:0.85; border-radius: 25px;" class="carousel-caption d-none d-md-block">
         <h2>Senior Care</h2>
         <p>When it comes to the care of ageing adults, we at Crown Medical believe in a whole-person and passionate approach to healthy ageing. Our physicians, nurses and other staff members are devoted to treating our patients with respect and compassion.</p>
       </div>

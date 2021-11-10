@@ -1,5 +1,5 @@
   
-<div id="footer" class = "bg-dark text-white fixed-bottom">
+<div id="footer" class = "bg-dark text-white fixed-bottom" style = "opacity:0.9;">
 
 <p class="text-center">Copyright &copy; - CROWN MEDICAL COMPLEX <?php echo date('Y'); ?></p>
   

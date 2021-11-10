@@ -17,12 +17,14 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
 
     <title>Crown Medical - <?php echo $title ?></title>
+    <!-- company icon added to the page title -->
     <link rel="icon" href="icons\icon.ico" type="image/icon type">
   </head>
-  <body>
+  <body style="margin-bottom:5%;margin:5%">
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="opacity:0.9;">
       <div class="container-fluid">
+        <!-- clickable company icon added to the navbar alongside company name -->
       <a class="navbar-brand" href="index.php"><img src="icons\icon.ico" alt="" width="30" height="24" class="d-inline-block align-text-top img-fluid rounded-circle" style ="height:10%"></a>
         <a class="navbar-brand" href="index.php" style = "color:gold">CROWN MEDICAL</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,14 +52,16 @@
       </div>
 
       <div class="navbar-nav ml-auto">
+        <!-- changes the Login button to welsome message to user once logged in -->
           <?php 
               if(!isset($_SESSION["username"])){
           ?>
           <a class="btn btn-primary" data-bs-toggle="offcanvas" href="login.php" role="button" aria-controls="offcanvasExample">
-  Login
-</a>
+            Login
+        </a>
           <a class="nav-item nav-link" href="login.php">Login</a>
           
+          <!-- displays username of person logged in once login process has been completed -->
           <?php } else { ?>
             <a class="nav-item nav-link" href="#"><span>Welcome <?php echo strtoupper($_SESSION['username']) ?>! </span></a>
             <a class="nav-item nav-link" href="logout.php">Logout</a>

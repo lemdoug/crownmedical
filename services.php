@@ -11,6 +11,11 @@
     height: 15vw;
     object-fit: scale-down;
 }
+.card{
+background-color:azure;
+
+}
+}
 </style>
 
 
@@ -21,7 +26,7 @@
     </div>
 </div>
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-4 back">
   <div class="col">
     <div class="card h-100">
       <img src="images/maternity.png" class="card-img-top" alt="Maternity care">
@@ -64,6 +69,42 @@
       <div class="card-body text-center">
         <h5 class="card-title">STI TESTING</h5>
         <p class="card-text text-center">We encourage persons to get to know their status as well as their partner’s status. As such we welcome couples visit, counselling and testing.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/diabetictesting.png" class="card-img-top" alt="Diabetic Testing">
+      <div class="card-body text-center">
+        <h5 class="card-title">DIABETIC CARE</h5>
+        <p class="card-text text-center">We work with our patients through continuous follow up to assist in maintaining a stable blood sugar and prevent disease progression.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/hearttest.png" class="card-img-top" alt="Heart Testing">
+      <div class="card-body text-center">
+        <h5 class="card-title">HEART TESTING</h5>
+        <p class="card-text text-center">We provide ECG (Electrocardiogram) Testing to check for heart conditions and investigate Chest Pain.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/counselling.png" class="card-img-top" alt="Counselling">
+      <div class="card-body text-center">
+        <h5 class="card-title">COUNSELLING</h5>
+        <p class="card-text text-center">We provide support to people experiencing difficulties by helping them to identify and work through issues.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="images/physiotherapy.png" class="card-img-top" alt="Physiotherapy">
+      <div class="card-body text-center">
+        <h5 class="card-title">PHYSIOTHERAPY</h5>
+        <p class="card-text text-center">We have an excellent physiotherapy team who are also trained in dry needling and massage therapy. </p>
       </div>
     </div>
   </div>

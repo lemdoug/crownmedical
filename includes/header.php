@@ -56,9 +56,6 @@
           <?php 
               if(!isset($_SESSION["username"])){
           ?>
-          <a class="btn btn-primary" data-bs-toggle="offcanvas" href="login.php" role="button" aria-controls="offcanvasExample">
-            Login
-        </a>
           <a class="nav-item nav-link" href="login.php">Login</a>
           
           <!-- displays username of person logged in once login process has been completed -->

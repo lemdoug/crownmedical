@@ -8,14 +8,14 @@
 
 <img src="images/aboutusfamily.jpg" class="d-block w-100 h-100" alt="About Us">
 
-<div class="card" >
+<div class="container w-100" >
  
-  <div class="card-body text-center " style="background-color:DarkSlateGrey; margin:1%">
-    <h2 class="card-title" style="font-weight: bold; color:white; background-color:gold; ">ABOUT US | Crown Medical Complex</h2>    
-    <p class="card-text" style="color:white;">Crown Medical Complex is a Holistic Medical Care Complex which offers unique and customized health services for the overall care of individuals and families across a wide range of demographics seeking to get the most out of life while enjoying the benefits of good health.</p>
+  <div class="text-center " style="background-color:DarkSlateGrey; margin:1%">
+    <h2  style="font-weight: bold; color:white; background-color:gold; ">ABOUT US | Crown Medical Complex</h2>    
+    <p class="lh-lg" style="color:white;">Crown Medical Complex is a Holistic Medical Care Complex which offers unique and customized health services for the overall care of individuals and families across a wide range of demographics seeking to get the most out of life while enjoying the benefits of good health.</p>
   </div>
  
-  
+</div>
 
   <style>
       .blkcontainer {
@@ -35,6 +35,7 @@
         padding-right: 20px;
         text-align: center;
         font-weight: bold;
+        line-height: 200%;
         
       }
     </style>
@@ -63,7 +64,7 @@
         <img src="images\owner.jpg">
       </div>
       
-    </div>
+  
 
 
 <?php require_once 'includes/footer.php'?>

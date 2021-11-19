@@ -1,7 +1,7 @@
   
 <div id="footer" class = "bg-dark text-white fixed-bottom" style = "opacity:0.9;">
 
-<p class="text-center">Copyright &copy; - CROWN MEDICAL COMPLEX <?php echo date('Y'); ?></p>
+<p class="text-center">Copyright &copy; <?php echo date('Y'); ?> - CROWN MEDICAL COMPLEX || All Rights Reserved</p>
   
 
 </div>

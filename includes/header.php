@@ -1,5 +1,6 @@
 <?php
-  include_once 'includes\session.php';
+  include_once 'session.php';
+  include_once 'style.php';
 ?> 
 
 <!doctype html>
@@ -68,5 +69,7 @@
     </div>
   </nav>
   <div class="container">
+
+ 
 
    

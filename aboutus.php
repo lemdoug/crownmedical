@@ -5,43 +5,19 @@
     
 ?>
 
-
-<img src="images/aboutusfamily.jpg" class="d-block w-100 h-100" alt="About Us">
-
-<div class="container w-100" >
- 
-  <div class="text-center " style="background-color:DarkSlateGrey; margin:1%">
-    <h2  style="font-weight: bold; color:white; background-color:gold; ">ABOUT US | Crown Medical Complex</h2>    
-    <p class="lh-lg" style="color:white;">Crown Medical Complex is a Holistic Medical Care Complex which offers unique and customized health services for the overall care of individuals and families across a wide range of demographics seeking to get the most out of life while enjoying the benefits of good health.</p>
+<div class="img-container">
+  <img src="images/aboutusfamily.jpg" class="d-block w-100 h-100" alt="About Us"> 
+  <div class="text-block">
+    <h2>ABOUT US</h2>    
   </div>
- 
+  
 </div>
 
-  <style>
-      .blkcontainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-       background-color:gold;
-        }
-      img {
-        max-width: 100%
-      }
-      .blkimage {
-        flex-basis: 120%
-      }
-      .blktext {
-        font-size: 20px;
-        padding-right: 20px;
-        text-align: center;
-        font-weight: bold;
-        line-height: 200%;
-        
-      }
-    </style>
 
-    <div class="blkcontainer">
-    <div class="blktext">
+
+
+<div class="blkcontainer" style="margin:1%;">
+  <div class="blktext">
         <p>
           A healthy and a happy mind will result in a healthy You. Let Crown Medical Complex help you create great health now. 
           So you can live at your peak potential.

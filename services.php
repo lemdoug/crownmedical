@@ -5,28 +5,15 @@
     
 ?>
 
-<style>
-.card-img-top {
-    width: 100%;
-    height: 15vw;
-    object-fit: scale-down;
-}
-.card{
-background-color:azure;
 
-}
-}
-</style>
-
-
-<div>
+<div class="img-container">
     <img src="images/services.jpg" class="d-block w-100 h-100" alt="Services">
-    <div class="text-center " style="background-color:DarkSlateGrey; margin:1%">
-        <h2  style="font-weight: bold; color:white; background-color:gold; ">OUR SERVICES</h2>    
+    <div class="text-block">
+        <h2>OUR SERVICES</h2>    
     </div>
 </div>
 
-<div class="row row-cols-1 row-cols-md-3 g-4 back">
+<div class="row row-cols-1 row-cols-md-3 g-4 back" style="margin:1%;">
   <div class="col">
     <div class="card h-100">
       <img src="images/maternity.png" class="card-img-top" alt="Maternity care">

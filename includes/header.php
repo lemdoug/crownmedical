@@ -61,7 +61,8 @@
           
           <!-- displays username of person logged in once login process has been completed -->
           <?php } else { ?>
-            <a class="nav-item nav-link" href="#"><span>Welcome <?php echo strtoupper($_SESSION['username']) ?>! </span></a>
+            <a class="nav-item nav-link" href="viewall.php"><span>Welcome <?php echo strtoupper($_SESSION['username']) ?>!</span></a>
+            <a class="nav-item nav-link" href="viewall.php" style="color: gold;"><span>View Patients </span></a>
             <a class="nav-item nav-link" href="logout.php">Logout</a>
             
           <?php } ?>

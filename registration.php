@@ -1,9 +1,13 @@
 <?php 
 
     $title = 'Registration';
-    require_once 'includes/header.php'
-    
+    require_once 'includes/header.php';
+    require_once 'db/conn.php'; 
+
+    $results = $crud->getParish();
+
 ?>
+
 <div class="img-container">
     <img src="images/registration.jpg" class="d-block w-100 h-100" alt="Registration">
     <div class="text-block">
@@ -11,7 +15,6 @@
     </div>
 </div>
 
-<div>   
 <h1 class="text-center">Patient Registration</h1>
 <h6 class="text-left">Plese complete all required fields</h6>
 
@@ -27,18 +30,33 @@
     </div>
 
     <div class="mb-3">
+        <label for="address1" class="form-label">Address (line 1)</label>
+        <input type="text" class="form-control" id="address1" name="address1"/>
+    </div>
+
+    <div class="mb-3">
+        <label for="address2" class="form-label">Address (line 2)</label>
+        <input type="text" class="form-control" id="address2" name="address2"/>
+    </div>
+
+    <div class="mb-3">
+        <label for="parish" class="form-label">Parish</label>
+        <select required class="form-select" name="parish" aria-label="Default select example">
+            
+           <?php while ($r = $results->fetch(PDO::FETCH_ASSOC)) { ?>
+                <option value ='<?php echo $r['parish_id'];?>'><?php echo $r ['name']; ?></option>
+            <?php }?>
+        </select>
+    </div>
+
+    <div class="mb-3">
         <label for="dob" class="form-label">Date of Birth</label>
         <input type="text" class="form-control" id="dob" name="dob"/>
     </div>
 
     <div class="mb-3">
         <label for="gender" class="form-label">Gender</label>
-        <select required class="form-select" name="gender" aria-label="Default select example">
-            
-           <?php while ($r = $results->fetch(PDO::FETCH_ASSOC)) { ?>
-                <option value ='<?php echo $r['gender_id'];?>'><?php echo $r ['name']; ?></option>
-            <?php }?>
-        </select>
+        <input type="text" class="form-control" id="gender" name="gender"/>
     </div>
 
     <div class="mb-3">
@@ -62,40 +80,8 @@
     </div>
 
 </form>
-</div>
-<?php require_once 'includes/footer.php'?>
-
-
-
-<div style = "margin:1%; background-color:lightblue; border-radius: 25px;">
-    <div>
-
-        <h1 style="font-weight:bold">Our Contact</h1>
-        <h3 style="font-weight:bold">Crown Medical Complex</h3>
-        <h5>Holistic Health Service · Medical Center · Family Doctor</h5>
-
-    </div>
-
-    <div class="sm_icon" style="margin:3%;">
-    <h5 style="font-weight:bold">Address:</h5>
-        <p>
-            68 Old Hope Road, Kingston 5 <br/>
-            Kingston, Jamaica, W.I. <br/>
-            Office Lines: 876.609.3453 <br/>
-            Email: crownmedical@gmail.com
-        </p> 
-    </div>
-
-    <div style="margin:3%">
-        <h5 style="font-weight:bold">Office Hours:</h5>
-        <p>
-            Monday to Friday<br/>
-            10:00 am to 7:00 pm<br/>
-            Saturdays<br/>
-            11:00 am to 6:00 pm
-        </p> 
-    </div>
-</div>
 
 <?php require_once 'includes/footer.php'?>
+
+
 

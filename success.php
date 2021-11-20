@@ -21,8 +21,8 @@
         
         $orig_file = $_FILES["pic"]["tmp_name"];
         $target_dir = 'uploads/';
-        $ext = pathinfo($_FILES["pic"]["name"], PATHINFO_EXTENSION);
-        $destination = "$target_dir$contact.$ext";
+        
+        $destination = "$target_dir$email.$ext";
         move_uploaded_file($orig_file,$destination);
       
         //call function to insert and tracks if it was successful or not

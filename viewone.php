@@ -1,7 +1,7 @@
 <?php 
     $title = 'View Patient Detail';
     require_once 'includes/header.php'; 
-    //require_once 'includes/auth_check.php';
+    require_once 'includes\authcheck.php';
     require_once 'db/conn.php'; 
 
 
@@ -13,6 +13,7 @@
     }else{
         $id = $_GET['id'];
         $result = $crud->getPatientDetails($id);
+        $ext = pathinfo($result['avatar_path'],PATHINFO_EXTENSION);
 
 
 ?>
@@ -21,7 +22,7 @@
     <div class="card-body text-left mb-5">
             <h3 class="card-title text-center" >Patient details</h3>
         
-            <img class="img-fluid rounded-circle" style ="width:10%; height:10%"src="<?php echo empty($result['avatar_path']) ? "uploads/default.png" : $result['avatar_path']?>"/>
+            <img class="img-fluid rounded-circle" style ="width:10%; height:10%"src="<?php echo empty($ext) ? "uploads\default.png" : $result['avatar_path']?>"/>
 
             <h4 class="card-text"> <?php echo $result['firstname'] . ' ' . $result['lastname']; ?> </h4>
             <br/>

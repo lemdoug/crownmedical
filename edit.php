@@ -66,10 +66,10 @@
         <input type="text" class="form-control" value="<?php echo $patient['gender']?>" id="gender" name="gender"/>
     </div>
 
-    <!-- <div class="mb-3">
+    <div class="mb-3">
         <label for="email" class="form-label">Email address</label>
-        <input readonly type="email" class="form-control" value="<?php //echo $patient['emailaddress']?>" id="email" name="email" aria-describedby="emailHelp">
-        </div> -->
+        <input readonly type="email" class="form-control" value="<?php echo $patient['emailaddress']?>" id="email" name="email" aria-describedby="emailHelp">
+        </div>
     
  
 

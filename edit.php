@@ -15,6 +15,7 @@
     {
         $id = $_GET['id'];
         $patient = $crud->getPatientDetails($id); 
+        $ext = pathinfo($patient['avatar_path'],PATHINFO_EXTENSION);
      
 
 ?>
@@ -25,9 +26,12 @@
 <form method ="post" action="editpost.php" enctype="multipart/form-data" class="mb-5" style="margin:5%">
 
     <input type="hidden" name="id" value="<?php echo $patient['patient_id']?>" />
-
     
+    <div style="margin:5%">
+    <img class="img-fluid rounded-circle" style ="width:10%; height:10%"src="<?php echo empty($ext) ? "uploads\default.png" : $result['avatar_path']?>"/>
+    </div>
     
+    <div style="margin:5%">
     <div class="mb-3">
         <label for="firstname" class="form-label">First Name</label>
         <input required type="text"  class="form-control" value="<?php echo $patient['firstname']?>" id="firstname" name="firstname"/>
@@ -70,7 +74,8 @@
         <label for="email" class="form-label">Email address</label>
         <input readonly type="email" class="form-control" value="<?php echo $patient['emailaddress']?>" id="email" name="email" aria-describedby="emailHelp">
         </div>
-    
+
+    </div>
  
 
     <div class="d-grid gap-2">

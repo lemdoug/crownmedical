@@ -1,7 +1,7 @@
 <?php 
     $title = 'View Patient Detail';
     require_once 'includes/header.php'; 
-    require_once 'includes\authcheck.php';
+    require_once 'includes/authcheck.php';
     require_once 'db/conn.php'; 
 
 
@@ -26,8 +26,7 @@
 
             <h4 class="card-text"> <?php echo $result['firstname'] . ' ' . $result['lastname']; ?> </h4>
             <br/>
-            <h6 class="card-text"> <?php echo 'Contact details: ' . $result['emailaddress']. ' || ' . $result['contactnumber']; ?> </h6>
-            <h6 class="card-text"> <?php echo 'Date of birth: ' . $result['dateofbirth']; ?> </h6>
+            <h6 class="card-text"> <?php echo 'Email Address: ' . $result['emailaddress']?> </h6>
             <h6 class="card-text"> <?php echo 'Address: ' . $result['address1'] . ', ' . $result['address2'] . ', ' . $result['name']; ?> </h6>
 
             

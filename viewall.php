@@ -1,7 +1,7 @@
 <?php 
     $title = 'View Patients';
     require_once 'includes/header.php'; 
-    require_once 'includes\authcheck.php';
+    require_once 'includes/authcheck.php';
     require_once 'db/conn.php'; 
 
     $results = $crud->getPatients();

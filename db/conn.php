@@ -19,9 +19,7 @@
         $pdo = new PDO($dsn, $dbuser, $pass);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-       // echo 'Hello DB';
     } catch(PDOException $e) {
-        //echo "<h1 class = 'text-danger'>Database not found</h1>";
     throw new PDOException($e->getMessage());
 }
 

@@ -9,12 +9,12 @@
             $this ->db = $conn;
         }
         //function to insert a new record into the attendee database
-        public function insertPatient($firstname, $lastname, $address1, $address2, $parish, $dob, $gender, $email, $contact, $avatar_path){
+        public function insertPatient($firstname, $lastname, $address1, $address2, $parish, $gender, $email,$avatar_path){
             try {
                 //define sql statement to be executed
             
 
-                $sql = "INSERT INTO patient (firstname, lastname, address1, address2, parish_id, dateofbirth, gender, emailaddress,contactnumber,avatar_path)VALUES (:firstname,:lastname,:address1,:address2,:parish,:dob,:gender,:email,:contact,:avatar_path)";
+                $sql = "INSERT INTO patient (firstname, lastname, address1, address2, parish_id, gender, emailaddress, avatar_path)VALUES (:firstname,:lastname,:address1,:address2,:parish,:gender,:email,:avatar_path)";
                 //prepare the sql statement for execution
                 $stmt = $this->db->prepare($sql);
 
@@ -24,10 +24,8 @@
                 $stmt->bindparam(':address1',$address1);
                 $stmt->bindparam(':address2',$address2);
                 $stmt->bindparam(':parish',$parish);
-                $stmt->bindparam(':dob',$dob);
                 $stmt->bindparam(':gender',$gender);
                 $stmt->bindparam(':email',$email);
-                $stmt->bindparam(':contact',$contact);
                 $stmt->bindparam(':avatar_path',$avatar_path);
 
                 //execute statement
@@ -42,23 +40,23 @@
 
         }
 
-        public function editPatient($id, $firstname, $lastname, $address1, $address2, $parish, $dob, $gender, $contact){
+        public function editPatient($id, $firstname, $lastname, $address1, $address2, $parish, $gender){
            try{
-            $sql ="UPDATE `patient` SET `firstname`=:firstname,`lastname`=:lastname,`address1`=:address1,`address2`=:address2,`parish_id`=parish,`dateofbirth`=:dob,`gender`=:gender,`emailaddress`=:email,`contactnumber`=:contact WHERE patient_id = :id";
+            $sql = "UPDATE `patient` SET `firstname`=:firstname,`lastname`=:lastname,`address1`=:address1,`address2`=:address2,`parish_id`=:parish, `gender`=:gender WHERE `patient_id`=:id";
             
+                   
             $stmt = $this->db->prepare($sql);
 
                 //bind all placeholders to the actual values
                 $stmt->bindparam(':id',$id);
                 $stmt->bindparam(':firstname',$firstname);
                 $stmt->bindparam(':lastname',$lastname);
-                $stmt->bindparam(':address1',$$address1);
-                $stmt->bindparam(':address2',$$address2);
-                $stmt->bindparam(':parish',$$parish);
-                $stmt->bindparam(':dob',$dob);
+                $stmt->bindparam(':address1',$address1);
+                $stmt->bindparam(':address2',$address2);
+                $stmt->bindparam(':parish',$parish);
                 $stmt->bindparam(':gender',$gender);
-                $stmt->bindparam(':email',$email);
-                $stmt->bindparam(':contact',$contact);
+
+                      
  
                 //execute statement
                 $stmt->execute();
@@ -150,6 +148,9 @@
                 return false;
             }
         }
+
+       
+        
         
 
     }

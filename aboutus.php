@@ -37,7 +37,7 @@
  
       </div>
       <div class="blkimage">
-        <img src="images\owner.jpg">
+        <img src="images/owner.jpg">
       </div>
       
   

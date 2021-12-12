@@ -35,7 +35,7 @@
       <div class="collapse navbar-collapse nav justify-content-center" id="navbarNav">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+            <a class="nav-link" aria-current="page" href="index.php">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="aboutus.php">About Us</a>
@@ -51,6 +51,8 @@
           </li>
         </ul>
       </div>
+
+
 
       <div class="navbar-nav ml-auto">
         <!-- changes the Login button to welsome message to user once logged in -->

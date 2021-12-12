@@ -50,11 +50,6 @@
     </div>
 
     <div class="mb-3">
-        <label for="dob" class="form-label">Date of Birth</label>
-        <input type="text" class="form-control" id="dob" name="dob"/>
-    </div>
-
-    <div class="mb-3">
         <label for="gender" class="form-label">Gender</label>
         <input type="text" class="form-control" id="gender" name="gender"/>
     </div>
@@ -65,18 +60,13 @@
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </div>
 
-    <div class="mb-3">
-        <label for="phone" class="form-label">Contact number</label>
-        <input type="text" class="form-control" id="phone" name="phone" aria-describedby="phoneHelp">
-        <div id="phoneHelp" class="form-text">We'll never share your number with anyone else.</div>
-    </div>
-
     <div class="input-group mb-3">
         <input type="file" accept="image/*" class="form-control" name="pic">
     </div>
 
     <div class="d-grid gap-2">
         <button class="btn btn-primary" type="submit" name="submit">Submit</button>
+        <a href="index.php" class="btn btn-danger">Cancel</a>
     </div>
 
 </form>

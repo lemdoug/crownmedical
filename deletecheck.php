@@ -24,12 +24,11 @@
 
             <h4 class="card-text"> <?php echo $result['firstname'] . ' ' . $result['lastname']; ?> </h4>
             <br/>
-            <h6 class="card-text"> <?php echo 'Contact details: ' . $result['emailaddress']. ' || ' . $result['contactnumber']; ?> </h6>
-            <h6 class="card-text"> <?php echo 'Date of birth: ' . $result['dateofbirth']; ?> </h6>
+            <h6 class="card-text"> <?php echo 'Contact details: ' . $result['emailaddress']?> </h6>
             <h6 class="card-text"> <?php echo 'Address: ' . $result['address1'] . ', ' . $result['address2'] . ', ' . $result['name']; ?> </h6>
             
+            <a href = 'delete.php?id=<?php echo $result['patient_id']?>' class= "btn btn-danger" >Confirm</a>
             <a href="viewall.php" class="btn btn-primary">Cancel</a>
-            <a href = 'delete.php?id=<?php echo $result['patient_id']?>' class= "btn btn-danger" >Delete</a>
         </div>
         
         <div class="card-footer text-muted">

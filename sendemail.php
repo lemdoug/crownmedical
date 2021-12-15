@@ -1,15 +1,30 @@
 <?php
-     class sendemail{
-        public static function SendMail($to,$subject,$content){
-            $key = '';
+    function sendEmail($id){
 
-            sendemail();
-     
-
+        try {
+            $sql = "SELECT `email` FROM `patient` where patient_id = :id";
+            $stmt = $this->db->prepare($sql);
+            $stmt->bindparam(':id',$id);
+            $stmt->execute();
+            $result = $stmt->fetch();
+            return $result; 
+    
+        }catch(PDOException $e){
+    
+            echo $e->getMessage();
+            return false;
         }
-    }
 
-    if(mail($to,$subject,$body)){
-        mail($email,"Thanks!!","Thank you very much for registering!!!")
-     }
+    }
+    
+   
+}{
+
+
+        $user_email = $user->user_email;
+   
+        $user_full_name = $user->user_firstname . $user->user_lastname;
+
+    // Now we are ready to build our welcome email
+    
 ?>

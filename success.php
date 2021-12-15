@@ -2,7 +2,7 @@
     $title = 'Success';
     require_once 'includes/header.php'; 
     require_once 'db/conn.php';
-    //require_once 'sendemail.php';
+    require_once 'sendemail.php';
 
    
 
@@ -26,7 +26,9 @@
         $email_exists = false;
         $stmt = $pdo->prepare("select `patient_id` from patient where emailaddress = :email");
         $stmt->execute(array(':email'=> $email));
+      
         
+
         if ($stmt->rowCount()>0){
             $email_exists = true;
             ?>
@@ -45,6 +47,8 @@
             //call function to insert and tracks if it was successful or not
             $isSuccess = $crud->insertPatient($firstname,$lastname,$address1,$address2,$parish,$gender,$email,$destination);
             $specialtyName = $crud->getParishbyID($parish);
+            
+
             ?>
             <div class="card-body text-left mb-5">
                 <h3 class="card-title text-center" > <?php echo 'Thank you for registering' .' '. $_POST['firstname'] ; ?></h3>

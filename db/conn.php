@@ -1,17 +1,17 @@
 <?php
     // Development Connection
-    $host = 'localhost';
-    $db = 'crownmedical_db';
-    $dbuser = 'root';
-    $pass = '';
-    $charset = 'utf8mb4';
+    // $host = 'localhost';
+    // $db = 'crownmedical_db';
+    // $dbuser = 'root';
+    // $pass = '';
+    // $charset = 'utf8mb4';
 
     //Remote Database Connection
-    // $host = 'remotemysql.com';
-    // $db = 'pX2duJX6zr';
-    // $dbuser = 'pX2duJX6zr';
-    // $pass = 'nvzl8bKGmi';
-    // $charset = 'utf8mb4';
+    $host = 'remotemysql.com';
+    $db = 'pX2duJX6zr';
+    $dbuser = 'pX2duJX6zr';
+    $pass = 'nvzl8bKGmi';
+    $charset = 'utf8mb4';
 
     $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 

@@ -51,7 +51,7 @@
     <h2 class="card-title" style="font-weight: bold">WELCOME TO CROWN MEDICAL</h2>
     <p class="card-text" style="font-style: italic; font-weight: bold;">Health Care for Royalty!</p>
     <!-- Email button that when clicked brings up default email client with Crown Medical's email address in 'to' field-->
-    <a class="btn btn-outline-dark" role="button" href="mailto:crownmedical@gmail.com">Email us at: crownmedical@gmail.com</a>
+    <a class="btn btn-outline-dark" role="button" href="mailto:crownmedicaljm@gmail.com">Email us at: crownmedicaljm@gmail.com</a>
   </div>
 </div>
 

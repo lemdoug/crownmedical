@@ -45,6 +45,17 @@
             //call function to insert and tracks if it was successful or not
             $isSuccess = $crud->insertPatient($firstname,$lastname,$address1,$address2,$parish,$gender,$email,$destination);
             $specialtyName = $crud->getParishbyID($parish);
+
+            //send email 
+            
+                    $to = $email;
+                    $subject = "Welcome to Crown Medical";
+                    $txt = "Hello world!";
+                    $headers = "From: crownmedicaljm@gmail.com" . "\r\n" .
+                    "BCC: crownmedicaljm@gmail.com";
+
+                    mail($to,$subject,$txt,$headers);
+
             
 
             ?>

@@ -28,7 +28,7 @@
             68 Old Hope Road, Kingston 5 <br/>
             Kingston, Jamaica, W.I. <br/>
             Office Lines: 876.609.3453 <br/>
-            Email: crownmedical@gmail.com
+            Email: crownmedicaljm@gmail.com
         </p> 
     </div>
 

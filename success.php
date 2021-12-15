@@ -50,7 +50,7 @@
             
                     $to = $email;
                     $subject = "Welcome to Crown Medical";
-                    $txt = "Hello world!";
+                    $txt = "Thank you for registering with Crown Medical.";
                     $headers = "From: crownmedicaljm@gmail.com" . "\r\n" .
                     "BCC: crownmedicaljm@gmail.com";
 

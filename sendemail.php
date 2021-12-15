@@ -1,30 +1,28 @@
 <?php
-    function sendEmail($id){
+    require_once 'vendor\autoload.php';
 
-        try {
-            $sql = "SELECT `email` FROM `patient` where patient_id = :id";
-            $stmt = $this->db->prepare($sql);
-            $stmt->bindparam(':id',$id);
-            $stmt->execute();
-            $result = $stmt->fetch();
-            return $result; 
-    
-        }catch(PDOException $e){
-    
-            echo $e->getMessage();
-            return false;
+    class sendemail{
+        public static function SendMail($to,$subject,$content){
+            $key = '';
+
+            $email = new \SendGrid\Mail\Mail();
+            $email->setFrom("crownmedical@gmail.com", "Crown Medical");
+            $email->setSubject($subject);
+            $email->addTo($to);
+            $email->addContent("text/plain", $content);
+            //$email->addContent("text/html", $content);
+
+            $sendgrid = new \SendGrid($key);
+
+            try{
+                $response = $sendgrid->send($email);
+                return $response;
+            }catch(Exception $e){
+                echo 'Email exception caught: '.$e->getMessage()."\n";
+                return false;
+
+            }
+
         }
-
     }
-    
-   
-}{
-
-
-        $user_email = $user->user_email;
-   
-        $user_full_name = $user->user_firstname . $user->user_lastname;
-
-    // Now we are ready to build our welcome email
-    
 ?>

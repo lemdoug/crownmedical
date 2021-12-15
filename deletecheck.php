@@ -13,6 +13,7 @@
     }else{
         $id = $_GET['id'];
         $result = $crud->getPatientDetails($id);
+        $ext = pathinfo($result['avatar_path'],PATHINFO_EXTENSION);
 
 
 ?>
@@ -20,7 +21,7 @@
     <div class="card-body text-left">
             <h3 class="card-title text-left text-danger" >Are you sure you want to delete?</h3>
         
-            <img class="img-fluid rounded-circle" style ="width:10%; height:10%"src="<?php echo empty($result['avatar_path']) ? "uploads/default.png" : $result['avatar_path']?>"/>
+            <img class="img-fluid rounded-circle" style ="width:10%; height:10%"src="<?php echo empty($ext) ? "uploads\default.png" : $result['avatar_path']?>"/>
 
             <h4 class="card-text"> <?php echo $result['firstname'] . ' ' . $result['lastname']; ?> </h4>
             <br/>

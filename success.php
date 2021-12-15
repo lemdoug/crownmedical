@@ -2,7 +2,7 @@
     $title = 'Success';
     require_once 'includes/header.php'; 
     require_once 'db/conn.php';
-    require_once 'sendemail.php';
+    //require_once 'sendemail.php';
 
    
 
@@ -26,11 +26,9 @@
         $email_exists = false;
         $stmt = $pdo->prepare("select `patient_id` from patient where emailaddress = :email");
         $stmt->execute(array(':email'=> $email));
-      
-        
-
         if ($stmt->rowCount()>0){
             $email_exists = true;
+              
             ?>
                 <div class="card-body text-left mb-5">
                 <h3 class="card-title text-center" > <?php echo 'This email address is already registered!'?></h3>

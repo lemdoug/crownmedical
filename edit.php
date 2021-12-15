@@ -28,7 +28,7 @@
     <input type="hidden" name="id" value="<?php echo $patient['patient_id']?>" />
     
     <div style="margin:5%">
-    <img class="img-fluid rounded-circle" style ="width:10%; height:10%"src="<?php echo empty($ext) ? "uploads\default.png" : $result['avatar_path']?>"/>
+    <img class="img-fluid rounded-circle" style ="width:10%; height:10%"src="<?php echo empty($ext) ? "uploads\default.png" : $patient['avatar_path']?>"/>
     </div>
     
     <div style="margin:5%">
